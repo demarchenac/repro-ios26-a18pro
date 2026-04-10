@@ -34,6 +34,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      ["expo-build-properties", { "ios": { "deploymentTarget": "16.4" } }],
       [
         "@sentry/react-native/expo",
         {
@@ -47,8 +48,7 @@
       ["expo-image-picker", { "photosPermission": "Photos access for testing.", "cameraPermission": "Camera access for testing." }],
       "expo-file-system",
       "expo-secure-store",
-      "expo-image",
-      ["expo-build-properties", { "ios": { "deploymentTarget": "16.4" } }]
+      "expo-image"
     ],
     "owner": "demarchenac",
     "extra": {
