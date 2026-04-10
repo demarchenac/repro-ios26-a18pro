@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@sentry/react-native": "^8.7.0",
     "expo": "^56.0.0-canary-20260409-6fc2991",
     "expo-status-bar": "56.0.0-canary-20260409-6fc2991",
     "react": "19.2.3",
