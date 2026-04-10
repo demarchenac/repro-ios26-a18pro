@@ -4,7 +4,10 @@
   },
   "build": {
     "production": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "SENTRY_ALLOW_FAILURE": "true"
+      }
     }
   }
 }
