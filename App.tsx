@@ -1,4 +1,4 @@
-import '../global.css';
+import './global.css';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
