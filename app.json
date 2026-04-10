@@ -25,6 +25,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "owner": "demarchenac"
+    "owner": "demarchenac",
+    "extra": {
+      "eas": {
+        "projectId": "fec7618a-996f-41ab-8248-23fe5d2b2508"
+      }
+    }
   }
 }
