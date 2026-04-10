@@ -13,6 +13,7 @@
     },
     "ios": {
       "supportsTablet": true,
+      "deploymentTarget": "16.4",
       "bundleIdentifier": "app.rondas.repro",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
