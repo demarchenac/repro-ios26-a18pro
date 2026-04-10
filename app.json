@@ -46,7 +46,8 @@
       ["expo-image-picker", { "photosPermission": "Photos access for testing.", "cameraPermission": "Camera access for testing." }],
       "expo-file-system",
       "expo-secure-store",
-      "expo-image"
+      "expo-image",
+      ["expo-build-properties", { "ios": { "deploymentTarget": "16.4" } }]
     ],
     "owner": "demarchenac",
     "extra": {
