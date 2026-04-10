@@ -2,6 +2,7 @@ import './global.css';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { KeyboardProvider } from 'react-native-keyboard-controller';
 import 'react-native-reanimated';
 import * as Sentry from '@sentry/react-native';
 
@@ -14,12 +15,15 @@ Sentry.init({
 export default Sentry.wrap(function App() {
   return (
     <GestureHandlerRootView className="flex-1">
-      <View className="flex-1 items-center justify-center bg-white">
-        <Text className="text-xl font-bold mb-2">Repro: iOS 26 + A18 Pro crash</Text>
-        <Text className="text-base text-gray-500 mb-4">Testing with: Sentry + NativeWind</Text>
-        <Text className="text-xs text-gray-400">SDK 56 canary • RN 0.85 • Hermes V1</Text>
-        <StatusBar style="auto" />
-      </View>
+      <KeyboardProvider>
+        <View className="flex-1 items-center justify-center bg-white">
+          <Text className="text-xl font-bold mb-2">Repro: iOS 26 + A18 Pro</Text>
+          <Text className="text-base text-gray-500 mb-4">Testing: ALL native deps</Text>
+          <Text className="text-xs text-gray-400">SDK 56 • RN 0.85 • Sentry • NativeWind</Text>
+          <Text className="text-xs text-gray-400">contacts • location • image-picker • keyboard</Text>
+          <StatusBar style="auto" />
+        </View>
+      </KeyboardProvider>
     </GestureHandlerRootView>
   );
 });

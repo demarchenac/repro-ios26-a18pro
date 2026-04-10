@@ -15,7 +15,11 @@
       "supportsTablet": true,
       "bundleIdentifier": "app.rondas.repro",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Camera access for testing.",
+        "NSPhotoLibraryUsageDescription": "Photo library access for testing.",
+        "NSContactsUsageDescription": "Contacts access for testing.",
+        "NSLocationWhenInUseUsageDescription": "Location access for testing."
       }
     },
     "android": {
@@ -36,7 +40,13 @@
           "project": "rondas",
           "organization": "demarchenac"
         }
-      ]
+      ],
+      ["expo-contacts", { "contactsPermission": "Contacts access for testing." }],
+      ["expo-location", { "locationWhenInUsePermission": "Location access for testing." }],
+      ["expo-image-picker", { "photosPermission": "Photos access for testing.", "cameraPermission": "Camera access for testing." }],
+      "expo-file-system",
+      "expo-secure-store",
+      "expo-image"
     ],
     "owner": "demarchenac",
     "extra": {
